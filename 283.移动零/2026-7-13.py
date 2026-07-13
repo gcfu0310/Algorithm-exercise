@@ -8,4 +8,3 @@ class Solution:
             if nums[cur] != 0:
                 nums[non_zero],nums[cur] = nums[cur],nums[non_zero]
                 non_zero += 1
-            
