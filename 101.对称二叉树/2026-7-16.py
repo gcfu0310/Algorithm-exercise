@@ -13,7 +13,7 @@ class Solution:
         """递归判断二叉树是否轴对称。"""
 
         def is_mirror(left: Optional[TreeNode],
-                      right: Optional[TreeNode]) -> bool:
+                      right: Optional[TreeNode]) -> bool: 
             # 两个空节点互为镜像。
             if left is None and right is None:
                 return True
