@@ -15,6 +15,6 @@ class Solution:
                     cur_num += 1
                     cur_length += 1
             
-            max_length = max(max_length,cur_length)
+                max_length = max(max_length,cur_length)
         
         return max_length
