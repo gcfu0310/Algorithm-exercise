@@ -77,18 +77,18 @@ class Solution:
         self.visited = dict()
         return self.copy(head)
         
-    def copy(self,head:Optional[Node]) -> Optional[Node]:
-        # 递归终止条件
-        if head is None:
-            return None
-        if head in self.visited:
-            return self.visited[head]
+        def copy(self,head:Optional[Node]) -> Optional[Node]:
+            # 递归终止条件
+            if head is None:
+                return None
+            if head in self.visited:
+                return self.visited[head]
 
-        # 本层解决的问题
-        newNode = Node(head.val)
-        self.visited[head] = newNode
-        newNode.next = self.copy(head.next)
-        newNode.random = self.copy(head.random)
+            # 本层解决的问题
+            newNode = Node(head.val)
+            self.visited[head] = newNode
+            newNode.next = self.copy(head.next)
+            newNode.random = self.copy(head.random)
 
-        # 返回对应的值
-        return newNode
+            # 返回对应的值
+            return newNode
