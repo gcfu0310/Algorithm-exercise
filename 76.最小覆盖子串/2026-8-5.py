@@ -6,7 +6,7 @@ class Solution:
             return ""
         
         # 初始化一些变量
-        m,n = len(s),len(t)
+        m = len(s)
         # 当没有找到子串时，默认就是s的长度，不会有子串的长度会大于字符串本身
         start,min_len = m + 1,m+1
         # 当valid和字符串t中的字符种类相等时，说明窗口满足条件
