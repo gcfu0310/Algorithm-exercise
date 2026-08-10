@@ -22,6 +22,13 @@ class Solution:
                     matrix[i][j] = 0
 
     # 时间复杂度是O(mn),空间复杂度是O(1)
+    """
+    用第一行和第一列来标记该行该列是否需要清零
+    matrix[0][0] 用来记录第一行是否有0，是否需要清零
+    Flag_c 用来记录第一列是否有0，是否需要清零
+    先清零非第一行和第一列
+    再清零第一行和第一列
+    """
     def setZeroes_2(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
