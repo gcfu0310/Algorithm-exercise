@@ -18,6 +18,7 @@ class Solution:
         loop(root)
         return ans[k-1]
 
+# 时间复杂度是O(h+k),空间复杂度是O(h)
     def kthSmallest_1(self, root: Optional[TreeNode], k: int) -> int:
         t = 0
         ans = 0
