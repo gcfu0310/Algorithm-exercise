@@ -1,3 +1,5 @@
+from typing import List
+
 # 回溯法
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
